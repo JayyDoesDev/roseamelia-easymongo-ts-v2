@@ -2,17 +2,17 @@ export default class MongoClient {
     /**
      * Mongo
      */
-    public _on;
-    public _off;
-    public _connect;
-    public mongoose;
+    private _on;
+    private _off;
+    private _connect;
+    private mongoose;
     /**
      * ops
      */
-    public useNewUrlParser: boolean;
-    public useUnifiedTopology: boolean;
-    public useFindAndModify: boolean;
-    public useCreateIndex: boolean;
+    private useNewUrlParser: boolean;
+    private useUnifiedTopology: boolean;
+    private useFindAndModify: boolean;
+    private useCreateIndex: boolean;
     constructor(ops = {
         useNewUrlParser: true,
         useUnifiedTopology: true,
