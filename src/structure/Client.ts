@@ -35,19 +35,19 @@ export default class MongoClient {
         this._connect = require('../structure/lib/_connect')
     }
     
-    async on(message?: string) {
+    static async on(message?: string) {
         this._on(message)
     }
 
-    async off(message?: string) {
+    static async off(message?: string) {
         this._off(message)
     }
 
-    async connect(message?: string) {
+    static async connect(message?: string) {
         this._connect(message)
     }
 
-    async disconnect() {
+    static async disconnect() {
         this.mongoose.disconnect()
     }
 }
